@@ -12,7 +12,7 @@ const WeatherForm = ({ setWeatherData, setLoading, loading}) => {
     setLoading(true);
     try {
       const response = await axios.get(
-        "https://moonlit-dusk-8e5d7c.netlify.app/v1/current.json",
+        "https://api.weatherapi.com/v1/current.json",
         {
           params: {
             key: "514b2813e3524f92950112512231611",
