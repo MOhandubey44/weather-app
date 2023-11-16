@@ -1,0 +1,50 @@
+/* display.css */
+
+.mt-4 {
+  margin-top: 30px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.weather-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temperature {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.weather-icons img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more styles as needed */
+
+.animate__fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

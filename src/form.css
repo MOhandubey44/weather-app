@@ -1,0 +1,53 @@
+/* form.css */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #007bff; /* Update label color */
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Increase border-radius for a rounded look */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add smooth transition on hover */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-form {
+  animation: fadeInDown 0.8s;
+}
+
+.alert {
+  margin-top: 20px; /* Add spacing above alerts */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
