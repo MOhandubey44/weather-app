@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <WeatherForm setLoading={setLoading} setWeatherData={setWeatherData} />
+      <WeatherForm setLoading={setLoading} setWeatherData={setWeatherData} loading={loading} />
       <WeatherDisplay weatherData={weatherData} loading={loading}/>
     </div>
   );

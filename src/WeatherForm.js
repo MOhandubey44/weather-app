@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./form.css";
 
-const WeatherForm = ({ setWeatherData, setLoading }) => {
+const WeatherForm = ({ setWeatherData, setLoading, loading}) => {
   const [city, setCity] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -61,7 +61,7 @@ const WeatherForm = ({ setWeatherData, setLoading }) => {
           onChange={(e) => setCity(e.target.value)}
         />
       </div>
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" className="btn btn-primary" disabled={loading}>
         Get Weather
       </button>
 
